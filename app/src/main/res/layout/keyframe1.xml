@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--if xmlns:app isn't included, we cannot use the methods within app for layout design-->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Start"
+
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <!--The lines on the app is to center the button at the middle of the screen-->
+
+
+    <!--Position the material toolbar alongside the nested textView to occurpy the top of the page-->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar2"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="408dp"
+        android:background="#00695C"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+    <!--specifying app:layout_constraintStart_toStartOf and app:layout_constraintEnd_toEndOf ensures that the material toolbar occupies the top of the screen-->
+<!--In This case, text view is constrained by the Material toolbar-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WordleClone"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbar2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbar2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--layout/keyframe1.xml
+Keyframe 1 contains the starting position for all elements in the animation
+as well as final colors and text sizes
+-->
+

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraint_layout"
+    tools:context=".MainActivity">
+    <!--initialize a text view that will be updated depending on the user's input-->
+
+
+    <!--android:gravity="center" will center the text-->
+<!--Add the textView that will display the first guess from the user input for guess 1
+- Note that wrap_content does exactly as the name implies, it wraps the boundaries around the content itself
+-->
+
+
+    <!--In regards to constraint layout, we can adjust the horizontal and vertical bias to display the text view as needed -->
+<!--Note that the below text view does not change-->
+    <TextView
+        android:id="@+id/guess1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Guess #1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062"
+        tools:ignore="MissingConstraints" />
+
+    <!--Display the textView that will display how accruate the resulting guesses were-->
+
+    <!--Add the text view that will display the output of the second guess-->
+
+    <!--Add the third text view as well the third guess check text view-->
+
+    <!--Below is the text view that will display the output for the first guess that has been made-->
+
+    <TextView
+        android:id="@+id/guessChecker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Guess Check #1"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/guessChecker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Guess Check #2"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.334"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/guessChecker3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Guess Check #3"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/guessOutput2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Guess Output 2"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.239"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/guessOutput1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Guess Output 1"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062"
+        tools:ignore="MissingConstraints" />
+
+    <!--Text view row that will display the second guess-->
+
+    <!--Text view row that will display the third guess-->
+
+    <!--Text view that will display the third guess-->
+
+    <TextView
+        android:id="@+id/ResultingOutput1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Resulting Output 1"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ResultingOutput2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Resulting Output 2"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.334"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ResultingOutput3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Resulting Output 3"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/guess2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Guess #2"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.239"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/guess3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Guess #3"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/guessOutput3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Guess Output 3"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Reset"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Input text Here"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonSubmit"
+        app:layout_constraintBottom_toBottomOf="parent" />
+<!--Button id needs to be updated since it is distinct from keyframe1-->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="16dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/actualOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Placeholder"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.657"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--
+- This file was originally activity_main.xml
+- layout/keyframe2.xml
+- Keyframe 2 contains another constraint layout with final position
+-->
