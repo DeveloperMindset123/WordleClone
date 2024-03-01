@@ -44,7 +44,7 @@ GIF created with ...
 
 ## Notes
 
-Understanding content view, as well as figuring out the difference between constraint layout vs Relative/Linear Layout, adjusting AndroidManifest.xml file in order to ensure that content doesn't go out of screen during key view. Additionally, ensuring that views are not instantiated during onCreate function execution but rather in a seperate function, otherwise, can run into null pointer exception. Difference between private and public functions and the parameter datatypes as well as their resemblance to typescript. 
+Understanding set content view,figuring out the proper transition logic and animation to navigate between different scenes as well as figuring out the difference between constraint layout vs Relative/Linear Layout, adjusting AndroidManifest.xml file in order to ensure that content doesn't go out of screen during key view. Additionally, ensuring that views are not instantiated during onCreate function execution but rather in a seperate function, otherwise, can run into null pointer exception. Difference between private and public functions and the parameter datatypes as well as their resemblance to typescript. 
 
 ## License
 
