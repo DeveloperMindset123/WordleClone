@@ -32,18 +32,19 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzIxenlxM2FrOTFuODkwZnpzejZlbXVqaHZuNXpsZThiejFqbTFkMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wlMzCfjCxqQW7a7fAk/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
-<!-- Recommended tools:
+
 [Kap](https://getkap.co/) for macOS
+<!-- Recommended tools: 
 [ScreenToGif](https://www.screentogif.com/) for Windows
 [peek](https://github.com/phw/peek) for Linux. -->
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Understanding content view, as well as figuring out the difference between constraint layout vs Relative/Linear Layout, adjusting AndroidManifest.xml file in order to ensure that content doesn't go out of screen during key view. Additionally, ensuring that views are not instantiated during onCreate function execution but rather in a seperate function, otherwise, can run into null pointer exception. Difference between private and public functions and the parameter datatypes as well as their resemblance to typescript. 
 
 ## License
 
