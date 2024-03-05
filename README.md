@@ -1,6 +1,6 @@
 # Android Project 1 - *Wordle Clone*
 
-Submitted by: **Your Name Here**
+Submitted by: **Ayan Das**
 
 **Name of your app** is an android app that recreates a simple version of the popular word game [Wordle](https://www.nytimes.com/games/wordle/index.html). 
 
